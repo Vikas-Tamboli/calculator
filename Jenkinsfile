@@ -40,9 +40,9 @@ pipeline{
        //build calculator
        steps {
          sh '''
-            cp -r js/ /var/www/html/
-            cp -r index.html /var/www/html/
-            cp -r css/ /var/www/html/
+            sudo cp -r js/ /var/www/html/
+            sudo cp -r index.html /var/www/html/
+           sudo  cp -r css/ /var/www/html/
          ''' 
    
 }
