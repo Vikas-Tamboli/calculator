@@ -20,7 +20,7 @@ pipeline{
    stage("Repo_clone"){
        //Clone repo from GitHub
       steps {
-         checkout ([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[credentialsId: 'instance_id', url: ''git@github.com:Vikas-Tamboli/calculator.git]]])
+         checkout ([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[credentialsId: 'jenkins', url: ''git@github.com:Vikas-Tamboli/calculator.git]]])
 
 }
 }
