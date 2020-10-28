@@ -6,7 +6,7 @@ var inputLabel = document.getElementById('inputLabel');
          
         if (pushed == '=') {
             // Calculate
-            inputLabel.innerHTML = eval(inputLabel.innerHTML);
+            inputLabel.innerHTML = (inputLabel.innerHTML);
              
         } else if (pushed == 'AC') {
             // All Clear
