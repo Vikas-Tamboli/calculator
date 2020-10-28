@@ -30,7 +30,7 @@ pipeline{
        steps {
           sh '''
              cd js
-             jshint --verbose index.js
+             jshint --verbose test.js | grep -E E[0-9]+.$
              cd -
           '''
 }
